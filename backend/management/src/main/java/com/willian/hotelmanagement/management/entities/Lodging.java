@@ -26,6 +26,8 @@ public class Lodging {
     private Date checkIn;
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date checkOut;
+    private Integer amount;
+    private Integer balance;
     private String comments;
 
     public Long getId() {
@@ -83,4 +85,24 @@ public class Lodging {
     public void setComments(String comments) {
         this.comments = comments;
     }
+
+    public Integer getAmount() {
+        return amount;
+    }
+
+    public void setAmount(Integer amount) {
+        this.amount = amount;
+    }
+
+    public Integer getBalance() {
+        return balance;
+    }
+
+    public void setBalance(Integer balance) {
+        this.balance = balance;
+    }
+
+    
+
+    
 }
